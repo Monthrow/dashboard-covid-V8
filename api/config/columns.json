@@ -1,0 +1,429 @@
+[
+  {
+    "field": "record_date",
+    "header": "Date",
+    "kind": "date",
+    "required": true,
+    "example": "2022-12-10"
+  },
+  {
+    "field": "location_iso_code",
+    "header": "Location ISO Code",
+    "kind": "text",
+    "required": false,
+    "maxLength": 10,
+    "upper": true,
+    "example": "ID-JB"
+  },
+  {
+    "field": "location",
+    "header": "Location",
+    "kind": "category",
+    "required": true,
+    "maxLength": 100,
+    "values": [
+      "Indonesia",
+      "Aceh",
+      "Bali",
+      "Banten",
+      "Bengkulu",
+      "DKI Jakarta",
+      "Daerah Istimewa Yogyakarta",
+      "Gorontalo",
+      "Jambi",
+      "Jawa Barat",
+      "Jawa Tengah",
+      "Jawa Timur",
+      "Kalimantan Barat",
+      "Kalimantan Selatan",
+      "Kalimantan Tengah",
+      "Kalimantan Timur",
+      "Kalimantan Utara",
+      "Kepulauan Bangka Belitung",
+      "Kepulauan Riau",
+      "Lampung",
+      "Maluku",
+      "Maluku Utara",
+      "Nusa Tenggara Barat",
+      "Nusa Tenggara Timur",
+      "Papua",
+      "Papua Barat",
+      "Riau",
+      "Sulawesi Barat",
+      "Sulawesi Selatan",
+      "Sulawesi Tengah",
+      "Sulawesi Tenggara",
+      "Sulawesi Utara",
+      "Sumatera Barat",
+      "Sumatera Selatan",
+      "Sumatera Utara"
+    ],
+    "example": "Jawa Barat"
+  },
+  {
+    "field": "new_cases",
+    "header": "New Cases",
+    "kind": "int",
+    "required": true,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "new_deaths",
+    "header": "New Deaths",
+    "kind": "int",
+    "required": true,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "new_recovered",
+    "header": "New Recovered",
+    "kind": "int",
+    "required": true,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "new_active_cases",
+    "header": "New Active Cases",
+    "kind": "int",
+    "required": false,
+    "min": -2147483647,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "total_cases",
+    "header": "Total Cases",
+    "kind": "int",
+    "required": true,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "total_deaths",
+    "header": "Total Deaths",
+    "kind": "int",
+    "required": true,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "total_recovered",
+    "header": "Total Recovered",
+    "kind": "int",
+    "required": true,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "total_active_cases",
+    "header": "Total Active Cases",
+    "kind": "int",
+    "required": true,
+    "min": -2147483647,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "location_level",
+    "header": "Location Level",
+    "kind": "category",
+    "required": true,
+    "maxLength": 20,
+    "values": [
+      "Country",
+      "Province"
+    ],
+    "example": "Province"
+  },
+  {
+    "field": "city_or_regency",
+    "header": "City or Regency",
+    "kind": "text",
+    "required": false,
+    "maxLength": 100,
+    "titleCase": true,
+    "example": "Kota Bandung"
+  },
+  {
+    "field": "province",
+    "header": "Province",
+    "kind": "category",
+    "required": false,
+    "maxLength": 100,
+    "values": [
+      "Indonesia (Nasional)",
+      "Aceh",
+      "Bali",
+      "Banten",
+      "Bengkulu",
+      "DKI Jakarta",
+      "Daerah Istimewa Yogyakarta",
+      "Gorontalo",
+      "Jambi",
+      "Jawa Barat",
+      "Jawa Tengah",
+      "Jawa Timur",
+      "Kalimantan Barat",
+      "Kalimantan Selatan",
+      "Kalimantan Tengah",
+      "Kalimantan Timur",
+      "Kalimantan Utara",
+      "Kepulauan Bangka Belitung",
+      "Kepulauan Riau",
+      "Lampung",
+      "Maluku",
+      "Maluku Utara",
+      "Nusa Tenggara Barat",
+      "Nusa Tenggara Timur",
+      "Papua",
+      "Papua Barat",
+      "Riau",
+      "Sulawesi Barat",
+      "Sulawesi Selatan",
+      "Sulawesi Tengah",
+      "Sulawesi Tenggara",
+      "Sulawesi Utara",
+      "Sumatera Barat",
+      "Sumatera Selatan",
+      "Sumatera Utara"
+    ],
+    "example": "Jawa Barat"
+  },
+  {
+    "field": "country",
+    "header": "Country",
+    "kind": "category",
+    "required": false,
+    "maxLength": 60,
+    "values": [
+      "Indonesia"
+    ],
+    "example": "Indonesia"
+  },
+  {
+    "field": "continent",
+    "header": "Continent",
+    "kind": "category",
+    "required": false,
+    "maxLength": 30,
+    "values": [
+      "Asia"
+    ],
+    "example": "Asia"
+  },
+  {
+    "field": "island",
+    "header": "Island",
+    "kind": "category",
+    "required": false,
+    "maxLength": 60,
+    "values": [
+      "Jawa",
+      "Kalimantan",
+      "Kepulauan Indonesia",
+      "Maluku",
+      "Nusa Tenggara",
+      "Papua",
+      "Sulawesi",
+      "Sumatera"
+    ],
+    "example": "Jawa"
+  },
+  {
+    "field": "time_zone",
+    "header": "Time Zone",
+    "kind": "category",
+    "required": false,
+    "maxLength": 30,
+    "values": [
+      "UTC+07:00",
+      "UTC+08:00",
+      "UTC+09:00",
+      "WIB / WITA / WIT"
+    ],
+    "example": "UTC+07:00"
+  },
+  {
+    "field": "special_status",
+    "header": "Special Status",
+    "kind": "category",
+    "required": false,
+    "maxLength": 60,
+    "values": [
+      "Daerah Istimewa",
+      "Daerah Khusus",
+      "Daerah Khusus Ibu Kota",
+      "Non-Otoda/Reguler"
+    ],
+    "example": "Non-Otoda/Reguler"
+  },
+  {
+    "field": "total_regencies",
+    "header": "Total Regencies",
+    "kind": "int",
+    "required": false,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "total_cities",
+    "header": "Total Cities",
+    "kind": "int",
+    "required": false,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "total_districts",
+    "header": "Total Districts",
+    "kind": "int",
+    "required": false,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "total_urban_villages",
+    "header": "Total Urban Villages",
+    "kind": "int",
+    "required": false,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "total_rural_villages",
+    "header": "Total Rural Villages",
+    "kind": "int",
+    "required": false,
+    "min": 0,
+    "max": 2147483647,
+    "example": "120"
+  },
+  {
+    "field": "area_km2",
+    "header": "Area (km2)",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "35378"
+  },
+  {
+    "field": "population",
+    "header": "Population",
+    "kind": "int",
+    "required": false,
+    "min": 0,
+    "max": 9007199254740991,
+    "example": "48274162"
+  },
+  {
+    "field": "population_density",
+    "header": "Population Density",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1364.54"
+  },
+  {
+    "field": "longitude",
+    "header": "Longitude",
+    "kind": "decimal",
+    "required": false,
+    "min": 94,
+    "max": 142,
+    "example": "107.6034"
+  },
+  {
+    "field": "latitude",
+    "header": "Latitude",
+    "kind": "decimal",
+    "required": false,
+    "min": -12,
+    "max": 7,
+    "example": "-6.9175"
+  },
+  {
+    "field": "new_cases_per_million",
+    "header": "New Cases per Million",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  },
+  {
+    "field": "total_cases_per_million",
+    "header": "Total Cases per Million",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  },
+  {
+    "field": "new_deaths_per_million",
+    "header": "New Deaths per Million",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  },
+  {
+    "field": "total_deaths_per_million",
+    "header": "Total Deaths per Million",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  },
+  {
+    "field": "total_deaths_per_100k",
+    "header": "Total Deaths per 100rb",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  },
+  {
+    "field": "case_fatality_rate",
+    "header": "Case Fatality Rate",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  },
+  {
+    "field": "case_recovered_rate",
+    "header": "Case Recovered Rate",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  },
+  {
+    "field": "growth_factor_new_cases",
+    "header": "Growth Factor of New Cases",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  },
+  {
+    "field": "growth_factor_new_deaths",
+    "header": "Growth Factor of New Deaths",
+    "kind": "decimal",
+    "required": false,
+    "min": 0,
+    "example": "1.25"
+  }
+]
